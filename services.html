@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!------------------- Header ------------->
+    <header class="header">
+    <a href="#"><img src="tree.png" alt="logo"></a>
+        <div class="navmenu" id="navMenu">
+ <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="services.html">Services</a></li>
+     <li><a href="portfolio.html">Portfolio</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     </ul> 
+        </div>
+ <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+     </header>
+     
+     <!-------------sub-header section-------------->  
+     <section class="sub-header" id="sub-header">
+         <h1>What I <span>Do?</span></h1>
+     </section>
+     
+     
+       <!-- --------Services section ---------->
+      <section class="services" id="services">
+      <div class="text-title">
+          <h2><span>My </span>Services</h2>          
+      </div>      
+      <div class="services-content">
+         <div class="box">
+             <div class="icons">
+                  <i class="fa-solid fa-pen"></i>
+             </div>
+             <h3>Brand Identity & Graphic Design</h3>
+             <p>Designing Creative Visuals, Branding Material, and social media Designs that capture attention and express your story.</p>
+             <a href="#" class="btn">Read more</a>
+             
+         </div> 
+            
+            <div class="box">
+             <div class="icons">
+                  <i class="fa-solid fa-code"></i>
+             </div>
+             <h3>Front-End Web Development</h3>
+             <p>Building clean, Responsive websites that are fast, accessible, and visually appealing using modern web technologies.</p>
+             <a href="#" class="btn">Read more</a>             
+             </div>          
+           </div>
+           
+           <div class="stats">
+  <div>
+    <h3>50+</h3>
+    <p>Completed Designs</p>
+  </div>
+
+  <div>
+    <h3>5+</h3>
+    <p>Happy Clients</p>
+  </div>
+
+  <div>
+    <h3>1 Year+</h3>
+    <p>Experience</p>
+  </div>
+</div>
+           
+        </section>   
+  
+  
+     
+     <!---------footer -->
+       <footer class="footer">
+           <div class="attribution">
+              <p>© 2026 Happy Eze. All Rights Reserved.</p>
+           </div>
+           <div class="move-up">
+               <a href="#services"><i class="fa-solid fa-arrow-up"></i></a>
+           </div>
+       </footer>
+             
+             
+        <!---------js for toggle menu---------> 
+             <script>
+ var navMenu = document .getElementById("navMenu");
+ 
+ function openMenu() {
+     navMenu.style.right = "0";
+ }
+ 
+ function closeMenu() {
+     navMenu.style.right = "-200px";
+ }
+             </script>
+             
+     </body>
+</html>

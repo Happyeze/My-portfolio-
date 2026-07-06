@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!------------------- Header ------------->
+    <header class="header">
+    <a href="#"><img src="tree.png" alt="logo"></a>
+        <div class="navmenu" id="navMenu">
+ <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="services.html">Services</a></li>
+     <li><a href="portfolio.html">Portfolio</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     </ul> 
+        </div>
+ <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+     </header>
+     
+     <!-------------sub-header section-------------->  
+     <section class="sub-header" id="sub-header">
+         <h1>About <span>Me</span></h1>
+     </section>
+     
+     
+     <!-------------About section-------------->  
+     <section class="about" id="about">
+    <div class="about-text">
+     <h4>Graphic <span>Designer</span> &<br> Front-End Developer</h4>
+        <p>
+Hello! I'm a Graphic Designer and aspiring Front-End Developer who loves bringing ideas to life through creative design and responsive websites.
+
+I enjoy designing eye-catching graphics, building modern web interfaces, and continuously learning new technologies to improve my skills.
+
+Every project I work on is an opportunity to create meaningful digital experiences that are both beautiful and functional.
+</p>
+        <a href="contact.html" class="btn">Let's Talk</a>
+    </div>
+</section>
+     
+     <section class="others" id="others">
+         <div class="sub-text-title">
+             <h2>Why Choose <span>Me?</span></h2>
+         </div>
+         <div class="others-img">
+             <img src="tree.png" alt="">
+         </div>
+         
+         <div class="others-text">
+<p>
+I combine creativity with technical skills to create designs and websites that are visually appealing, responsive, and user-friendly. I pay close attention to detail, communicate effectively, and always strive to deliver quality work on time. As a passionate Graphic Designer and Front-End Developer, I am committed to continuous learning and creating digital experiences that help brands and businesses stand out.
+</p>
+         </div>
+         
+         <div>
+             <a href="contact.html" class="btn">Hire Me</a>
+         </div>
+     </section>
+     
+     
+     <!---------footer -->
+       <footer class="footer">
+           <div class="attribution">
+              <p>© 2026 Happy Eze. All Rights Reserved.</p>
+           </div>
+           <div class="move-up">
+               <a href="#about"><i class="fa-solid fa-arrow-up"></i></a>
+           </div>
+       </footer>
+             
+             
+        <!---------js for toggle menu---------> 
+             <script>
+ var navMenu = document .getElementById("navMenu");
+ 
+ function openMenu() {
+     navMenu.style.right = "0";
+ }
+ 
+ function closeMenu() {
+     navMenu.style.right = "-200px";
+ }
+             </script>
+             
+     </body>
+</html>

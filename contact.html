@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!------------------- Header ------------->
+    <header class="header">
+    <a href="#"><img src="tree.png" alt="logo"></a>
+        <div class="navmenu" id="navMenu">
+ <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+     </ul> 
+        </div>
+ <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+     </header>
+     
+     <!-------------sub-header section-------------->  
+     <section class="sub-header" id="sub-header">
+         <h1><span>Contact </span>Me!</h1>  
+     </section>
+     
+    <!-- -------Contact session ----------->
+        <section class="contact" id="contact">
+           <div class="contact-text">
+          
+         <p>Ready to grow your brand? I'm here to create designs and websites that make a lasting impression.</p> 
+       
+          <ul class="list">
+    <li><a href="tel:+2347052070754">+2347052070754</a></li>
+
+    <li><a href="mailto:happinesseze993@gmail.com">
+        happinesseze993@gmail.com
+    </a></li>
+
+    <li><a href="#">📍 Benin City, Edo State, Nigeria<br>
+
+Available for Freelance Projects</a></li>
+</ul>
+           </div>
+           <div class="icons">
+   <a href="https://wa.me/2347052070754" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<a href="https://www.instagram.com/happyeze993/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="mailto:happinesseze993@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+           </div>
+           </div> 
+<div class="contact-form">
+    <form
+    name="contact"
+    method="POST"
+    action="/thank-you.html"
+    data-netlify="true"
+    netlify-honeypot="bot-field">
+        <!-- Required by Netlify -->
+        <input type="hidden" name="form-name" value="contact">
+
+        <!-- Spam protection -->
+        <p hidden>
+            <label>
+                Don't fill this out:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
+
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Your Mobile Number"
+            required>
+
+        <textarea
+            name="message"
+            placeholder="How can I help you?"
+            rows="8"
+            required></textarea>
+
+        <input
+            type="submit"
+            value="Send Message"
+            class="submit">
+
+    </form>
+</div>
+        </section>
+        <!---------js for toggle menu---------> 
+             <script>
+ var navMenu = document .getElementById("navMenu");
+ 
+ function openMenu() {
+     navMenu.style.right = "0";
+ }
+ 
+ function closeMenu() {
+     navMenu.style.right = "-200px";
+ }
+             </script>
+             
+     </body>
+</html>
